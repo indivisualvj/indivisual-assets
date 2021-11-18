@@ -2,7 +2,7 @@
     "info": {
         "name": "_demos/glass-block.json",
         "version": 1,
-        "tutorial": {}
+        "tutorial": "[object Object]"
     },
     "layer": {
         "layer_transvisible": false,

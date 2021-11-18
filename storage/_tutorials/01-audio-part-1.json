@@ -5,8 +5,8 @@
     "text": "First you have to enable audio in the controls folder.",
     "exec": [
       "controller,closeAll",
-      "controller,openTreeByProperty,audio",
-      "controller,updateControl,audio,soundcloud,true,true,true"
+      "controller,openTreeByPath,controls",
+      "controller,updateControl,audio,microphone,true,true,true"
     ]
   },
   "audio flags": {

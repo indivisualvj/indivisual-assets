@@ -1,11 +1,11 @@
 {
     "info": {
-        "name": 0,
+        "name": "___lightspeed/schwere.json",
         "version": 1,
-        "tutorial": {}
+        "tutorial": "[object Object]"
     },
     "layer": {
-        "layer_transvisible": false,
+        "layer_transvisible": true,
         "layer_positionx": 0,
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
@@ -108,8 +108,8 @@
         "camera_rotationz_oscillate": "off"
     },
     "pattern": {
-        "pattern": "matrix",
-        "pattern_shapes": 1,
+        "pattern": "lightspeed",
+        "pattern_shapes": 6,
         "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
@@ -127,14 +127,14 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "tile",
+        "shape_geometry": "text",
         "shape_sizedivider": 1,
         "shape_moda": 0,
         "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
-        "shape_vertices": "",
+        "shape_vertices": "s c h w e r e",
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
@@ -144,19 +144,19 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "sparkle_plexus",
+        "mesh_material": "lambert",
         "material_style": "fill",
         "material_blending": "NormalBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 2,
+        "material_side": 0,
         "material_shininess": 2,
         "material_volume": 1,
         "material_roughness": 0.5,
         "material_metalness": 0.5,
         "material_softshading": false,
-        "material_shadowside": 2,
+        "material_shadowside": 1,
         "material_input": "texture",
         "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
@@ -167,11 +167,10 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "onergb",
+        "coloring_mode": "reactivergb",
         "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
@@ -236,15 +235,15 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 1.0999999999999996,
+        "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
-        "sizing_x": 1,
+        "sizing_x": -1,
         "sizing_x_oscillate": "off",
         "sizing_y": 1,
         "sizing_y_oscillate": "off",
         "sizing_z": 1,
         "sizing_z_oscillate": "off",
-        "sizing_flip": "off",
+        "sizing_flip": "flipx2",
         "sizing_limit": false,
         "sizing_audio": false,
         "sizing_sync": true
@@ -264,11 +263,53 @@
     "passes": {
         "shaders": [
             {
+                "bloom": {
+                    "apply": true,
+                    "random": false,
+                    "strength": {
+                        "value": 3,
+                        "_type": [
+                            0,
+                            3,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "threshold": {
+                        "value": 0.25,
+                        "_type": [
+                            0,
+                            1,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "radius": {
+                        "value": 1,
+                        "_type": [
+                            0,
+                            1,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "opacify": {
+                        "value": true
+                    }
+                }
+            },
+            {
                 "blendmode": {
                     "apply": true,
                     "random": false,
                     "strength": {
-                        "value": -2,
+                        "value": 0.5,
                         "_type": [
                             -2,
                             2,
@@ -279,7 +320,7 @@
                         "oscillate": "off"
                     },
                     "operator_one": {
-                        "value": 15,
+                        "value": 0,
                         "_type": [
                             0,
                             15,
@@ -290,7 +331,7 @@
                         "oscillate": "off"
                     },
                     "operator_two": {
-                        "value": 6,
+                        "value": 1,
                         "_type": [
                             0,
                             15,

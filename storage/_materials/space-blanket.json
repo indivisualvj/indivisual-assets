@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "_shiny/refraction-balls-1.json",
+        "name": "_materials/glass-blocks.json",
         "version": 1,
         "tutorial": {}
     },
@@ -109,7 +109,7 @@
     },
     "pattern": {
         "pattern": "cube",
-        "pattern_shapes": 8,
+        "pattern_shapes": 1,
         "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
@@ -127,9 +127,9 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "icosahedron",
-        "shape_sizedivider": 6,
-        "shape_moda": 3,
+        "shape_geometry": "cube",
+        "shape_sizedivider": 2,
+        "shape_moda": 0,
         "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
@@ -144,20 +144,20 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "refractive",
+        "mesh_material": "reflective",
         "material_style": "fill",
         "material_blending": "NoBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 50,
+        "material_shininess": 0,
         "material_volume": 1,
-        "material_roughness": 0.1,
+        "material_roughness": 0.46,
         "material_metalness": 1,
-        "material_softshading": true,
+        "material_softshading": false,
         "material_shadowside": 1,
-        "material_input": "none",
+        "material_input": "space-blanket-folds.mat",
         "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
@@ -170,14 +170,14 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "off",
+        "coloring_mode": "onergb",
         "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
-        "coloring_hue": 360,
+        "coloring_hue": 0,
         "coloring_hue_oscillate": "off",
-        "coloring_sat": 1,
+        "coloring_sat": 0,
         "coloring_sat_oscillate": "off",
-        "coloring_lum": 1.02,
+        "coloring_lum": 1,
         "coloring_lum_oscillate": "off",
         "coloring_opacity": 1,
         "coloring_opacity_oscillate": "off",
