@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": 0,
+        "name": "___panning_fun/floating-points.json",
         "version": 1,
         "tutorial": {}
     },
@@ -10,7 +10,7 @@
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
         "layer_positiony_oscillate": "off",
-        "layer_positionz": 0,
+        "layer_positionz": -3,
         "layer_positionz_oscillate": "off",
         "layer_rotationx": -180,
         "layer_rotationx_oscillate": "onoffdouble",
@@ -113,7 +113,7 @@
         "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
-        "pattern_paddingx": 4.27,
+        "pattern_paddingx": 7.120000000000003,
         "pattern_centery": 0,
         "pattern_paddingy": 1,
         "pattern_centerz": 0,
@@ -158,7 +158,7 @@
         "material_softshading": false,
         "material_shadowside": 2,
         "material_input": "texture",
-        "material_mapping": "default",
+        "override_material_inputping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
         "material_repeatx": 1,
@@ -167,8 +167,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "onergb",
@@ -236,7 +235,7 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 4.5,
+        "sizing_scale": 7.5,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",

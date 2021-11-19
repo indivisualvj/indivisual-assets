@@ -7,6 +7,6 @@
   "normalMap": "normal.jpg",
   "roughnessMap": null,
   "metalnessMap": "spec.jpg",
-  "roughness": 0.1,
+  "roughness": 1.0,
   "metalness": 0.9
 }

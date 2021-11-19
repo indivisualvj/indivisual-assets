@@ -1,8 +1,8 @@
 {
     "info": {
-        "name": 0,
+        "name": "__cubes-again/deep-metalist.json",
         "version": 1,
-        "tutorial": {}
+        "tutorial": "[object Object]"
     },
     "layer": {
         "layer_transvisible": false,
@@ -35,7 +35,7 @@
     "lighting": {
         "lighting_type": "point",
         "lighting_color": "#ffffff",
-        "lighting_intensity": 1,
+        "lighting_intensity": 10,
         "lighting_intensity_oscillate": "off",
         "lighting_angle": 1.05,
         "lighting_angle_oscillate": "off",
@@ -158,7 +158,7 @@
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
-        "material_mapping": "f2b",
+        "override_material_inputping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
         "material_repeatx": 1,
@@ -167,8 +167,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "onergb",

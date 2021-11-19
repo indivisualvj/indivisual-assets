@@ -1,8 +1,8 @@
 {
     "info": {
-        "name": 0,
+        "name": "__tiles-again/0.json",
         "version": 1,
-        "tutorial": {}
+        "tutorial": "[object Object]"
     },
     "layer": {
         "layer_transvisible": false,
@@ -127,15 +127,15 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "tile",
+        "shape_geometry": "cube",
         "shape_sizedivider": 14,
-        "shape_moda": 48,
+        "shape_moda": 0,
         "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
-        "shape_modifier": "extrude",
+        "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
         "shape_transform_volume": 1,
@@ -158,7 +158,7 @@
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
-        "material_mapping": "f2b",
+        "override_material_inputping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
         "material_repeatx": 1,
@@ -167,8 +167,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "onergb",
@@ -262,6 +261,56 @@
         "offset_sync": false
     },
     "passes": {
-        "shaders": []
+        "shaders": [
+            {
+                "edge_detection_rgb": {
+                    "apply": true,
+                    "random": false,
+                    "opacity": {
+                        "value": 0.3,
+                        "_type": [
+                            0,
+                            1,
+                            0.001
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            },
+            {
+                "fxaa": {
+                    "apply": true,
+                    "random": false,
+                    "resolution": {
+                        "x": {
+                            "value": 20,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByWidth",
+                            "audio": true,
+                            "stepwise": true,
+                            "oscillate": "off"
+                        },
+                        "y": {
+                            "value": 1,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByHeight",
+                            "audio": false,
+                            "stepwise": false,
+                            "oscillate": "off"
+                        }
+                    }
+                }
+            }
+        ]
     }
 }
