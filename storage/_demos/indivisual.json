@@ -2,7 +2,7 @@
     "info": {
         "name": "0",
         "version": 1,
-        "tutorial": "[object Object]"
+        "tutorial": {}
     },
     "layer": {
         "layer_transvisible": false,

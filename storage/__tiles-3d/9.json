@@ -2,7 +2,7 @@
     "info": {
         "name": "__tiles-again/9.json",
         "version": 1,
-        "tutorial": "[object Object]"
+        "tutorial": {}
     },
     "layer": {
         "layer_transvisible": false,
