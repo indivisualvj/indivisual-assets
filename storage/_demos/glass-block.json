@@ -158,7 +158,7 @@
         "material_softshading": true,
         "material_shadowside": 1,
         "material_input": "glass-blocks.mat",
-        "override_material_inputping": "default",
+        "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
         "material_repeatx": 0.25,

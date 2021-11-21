@@ -158,7 +158,7 @@
         "material_softshading": false,
         "material_shadowside": 2,
         "material_input": "texture",
-        "override_material_inputping": "default",
+        "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
         "material_repeatx": 1,

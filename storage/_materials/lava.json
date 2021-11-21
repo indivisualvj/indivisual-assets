@@ -158,7 +158,7 @@
         "material_softshading": true,
         "material_shadowside": 1,
         "material_input": "lava.mat",
-        "override_material_inputping": "default",
+        "material_mapping": "default",
         "material_wraps": "MirroredRepeatWrapping",
         "material_wrapt": "MirroredRepeatWrapping",
         "material_repeatx": 32,
