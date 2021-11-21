@@ -1,0 +1,10 @@
+{
+  "map": "c.png",
+  "aoMap": "ao.png",
+  "displacementMap": "d.png",
+  "displacementScale": 1,
+  "displacementBias": 1,
+  "normalMap": "n.png",
+  "roughnessMap": "r.png",
+  "roughness": 1
+}

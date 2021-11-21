@@ -2,7 +2,7 @@
     "info": {
         "name": "_materials/lava.json",
         "version": 1,
-        "tutorial": {}
+        "tutorial": "[object Object]"
     },
     "layer": {
         "layer_transvisible": false,
@@ -25,12 +25,12 @@
         "rhythm": "half"
     },
     "oscillator": {
-        "osci1_period": 2,
-        "osci1_amp": 0.6,
-        "osci2_period": 1.25,
-        "osci2_amp": 0.3,
-        "osci3_period": 0.66,
-        "osci3_amp": 0.1
+        "osci1_period": 8,
+        "osci1_amp": 0.12592592592592589,
+        "osci2_period": 4.616,
+        "osci2_amp": 0.14829629629629626,
+        "osci3_period": 1.862,
+        "osci3_amp": 0.02844444444444444
     },
     "lighting": {
         "lighting_type": "star",
@@ -68,7 +68,7 @@
         "lighting_pattern_paddingy": 1,
         "lighting_pattern_paddingz": 1,
         "lighting_pattern_centerx": -5,
-        "lighting_pattern_centerx_oscillate": "off",
+        "lighting_pattern_centerx_oscillate": "sinus32",
         "lighting_pattern_centery": 5,
         "lighting_pattern_centery_oscillate": "off",
         "lighting_pattern_centerz": -1.15,
@@ -102,10 +102,10 @@
         "camera_z_oscillate": "off",
         "camera_rotationx": 21.84296296296298,
         "camera_rotationx_oscillate": "off",
-        "camera_rotationy": 0,
-        "camera_rotationy_oscillate": "off",
-        "camera_rotationz": 0,
-        "camera_rotationz_oscillate": "off"
+        "camera_rotationy": 5.1,
+        "camera_rotationy_oscillate": "oscillator",
+        "camera_rotationz": 3.0340740740740726,
+        "camera_rotationz_oscillate": "oscillator"
     },
     "pattern": {
         "pattern": "cube",
@@ -154,11 +154,11 @@
         "material_shininess": 0,
         "material_volume": 0,
         "material_roughness": 0,
-        "material_metalness": 0,
+        "material_metalness": 0.7,
         "material_softshading": true,
         "material_shadowside": 1,
         "material_input": "lava.mat",
-        "material_mapping": "default",
+        "override_material_inputping": "default",
         "material_wraps": "MirroredRepeatWrapping",
         "material_wrapt": "MirroredRepeatWrapping",
         "material_repeatx": 32,
@@ -301,6 +301,83 @@
                     },
                     "opacify": {
                         "value": true
+                    }
+                }
+            },
+            {
+                "blendmode": {
+                    "apply": true,
+                    "random": false,
+                    "strength": {
+                        "value": 0.5,
+                        "_type": [
+                            -2,
+                            2,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "operator_one": {
+                        "value": 5,
+                        "_type": [
+                            0,
+                            15,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "operator_two": {
+                        "value": 10,
+                        "_type": [
+                            0,
+                            15,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            },
+            {
+                "smaa": {
+                    "apply": true,
+                    "random": false
+                }
+            },
+            {
+                "fxaa": {
+                    "apply": true,
+                    "random": false,
+                    "resolution": {
+                        "x": {
+                            "value": 1,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByWidth",
+                            "audio": false,
+                            "stepwise": false,
+                            "oscillate": "off"
+                        },
+                        "y": {
+                            "value": 1,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByHeight",
+                            "audio": false,
+                            "stepwise": false,
+                            "oscillate": "off"
+                        }
                     }
                 }
             }
