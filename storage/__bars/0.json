@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__cubes-again/deep-metalist.json",
+        "name": "__bars/0.json",
         "version": 1,
         "tutorial": {}
     },
@@ -33,9 +33,9 @@
         "osci3_amp": 0.1
     },
     "lighting": {
-        "lighting_type": "point",
+        "lighting_type": "off",
         "lighting_color": "#ffffff",
-        "lighting_intensity": 10,
+        "lighting_intensity": 1,
         "lighting_intensity_oscillate": "off",
         "lighting_angle": 1.05,
         "lighting_angle_oscillate": "off",
@@ -71,11 +71,11 @@
         "lighting_pattern_centerx_oscillate": "off",
         "lighting_pattern_centery": 0,
         "lighting_pattern_centery_oscillate": "off",
-        "lighting_pattern_centerz": -0.002074074074074079,
+        "lighting_pattern_centerz": 1,
         "lighting_pattern_centerz_oscillate": "off"
     },
     "background": {
-        "background_mode": "flashcomplementary",
+        "background_mode": "transparent",
         "background_color": "#000000",
         "background_input": "none",
         "background_volume": 1,
@@ -92,13 +92,13 @@
     },
     "camera": {
         "camera_mode": "manual",
-        "camera_mode_volume": 0.1277037037037034,
+        "camera_mode_volume": 2.3000000000000007,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
         "camera_x_oscillate": "off",
         "camera_y": 0,
         "camera_y_oscillate": "off",
-        "camera_z": 0.2888888888888884,
+        "camera_z": 1,
         "camera_z_oscillate": "off",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
@@ -109,8 +109,8 @@
     },
     "pattern": {
         "pattern": "matrix",
-        "pattern_shapes": 1,
-        "pattern_padding": 0,
+        "pattern_shapes": 14,
+        "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
@@ -121,17 +121,17 @@
         "pattern_limit": false,
         "pattern_audio": false,
         "pattern_sync": true,
-        "pattern_mover": "off",
+        "pattern_mover": "pan",
         "pattern_overlay": "off",
         "pattern_overlay_volume": 0,
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "cube",
-        "shape_sizedivider": 1,
-        "shape_moda": 16,
-        "shape_modb": 16,
-        "shape_modc": 16,
+        "shape_geometry": "bar",
+        "shape_sizedivider": 14,
+        "shape_moda": 2,
+        "shape_modb": 0,
+        "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
@@ -144,17 +144,17 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "physical",
+        "mesh_material": "lambert",
         "material_style": "fill",
         "material_blending": "NormalBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 1,
-        "material_shininess": 0,
+        "material_side": 0,
+        "material_shininess": 2,
         "material_volume": 1,
-        "material_roughness": 0.43,
-        "material_metalness": 1,
+        "material_roughness": 0.5,
+        "material_metalness": 0.5,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
@@ -170,8 +170,8 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "onergb",
-        "coloring_volume": 1,
+        "coloring_mode": "floatrgbc",
+        "coloring_volume": 1.33,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
         "coloring_hue_oscillate": "off",
@@ -184,7 +184,7 @@
         "coloring_limit": false,
         "coloring_audio": false,
         "coloring_sync": true,
-        "coloring_emissive": false
+        "coloring_emissive": true
     },
     "filter": {
         "filter_mode": "off",
@@ -197,7 +197,7 @@
     "rotation": {
         "rotation_mode": "default",
         "rotation_sync": true,
-        "rotation_direction": "random",
+        "rotation_direction": "right",
         "rotation_easing": "off",
         "rotation_x": false,
         "rotation_x_random": false,
@@ -235,11 +235,11 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 0.53,
+        "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
-        "sizing_x": 1,
+        "sizing_x": 2,
         "sizing_x_oscillate": "off",
-        "sizing_y": 1,
+        "sizing_y": 4,
         "sizing_y_oscillate": "off",
         "sizing_z": 1,
         "sizing_z_oscillate": "off",
