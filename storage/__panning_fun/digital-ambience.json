@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___panning_fun/digital-ambience.json",
+        "name": "__panning_fun/digital-ambience.json",
         "version": 1,
         "tutorial": {}
     },
@@ -362,6 +362,38 @@
                     },
                     "grayscale": {
                         "value": false
+                    }
+                }
+            },
+            {
+                "fxaa": {
+                    "apply": true,
+                    "random": false,
+                    "resolution": {
+                        "x": {
+                            "value": 100,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByWidth",
+                            "audio": false,
+                            "stepwise": false,
+                            "oscillate": "sininouthexa"
+                        },
+                        "y": {
+                            "value": 100,
+                            "_type": [
+                                1,
+                                1000,
+                                0.1
+                            ],
+                            "_func": "valueByHeight",
+                            "audio": false,
+                            "stepwise": false,
+                            "oscillate": "oscillator"
+                        }
                     }
                 }
             }

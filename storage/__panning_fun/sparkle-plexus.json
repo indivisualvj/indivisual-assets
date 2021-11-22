@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___panning_fun/sparkle-plexus.json",
+        "name": "__panning_fun/sparkle-plexus.json",
         "version": 1,
         "tutorial": {}
     },
@@ -289,7 +289,7 @@
                         "oscillate": "off"
                     },
                     "sampleDistance": {
-                        "value": 5,
+                        "value": 2.5,
                         "_type": [
                             -10,
                             10,
@@ -297,10 +297,10 @@
                         ],
                         "audio": false,
                         "stepwise": false,
-                        "oscillate": "blitzpeakslow"
+                        "oscillate": "off"
                     },
                     "waveFactor": {
-                        "value": 0.001,
+                        "value": 0.0104,
                         "_type": [
                             0,
                             0.5,
@@ -308,60 +308,7 @@
                         ],
                         "audio": false,
                         "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "film": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 1,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "timestamp"
-                    },
-                    "scanlines": {
-                        "value": 512,
-                        "_type": [
-                            1,
-                            1024,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.05,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
+                        "oscillate": "oscillator"
                     }
                 }
             }

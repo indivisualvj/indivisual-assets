@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___panning_fun/trigonometric.json",
+        "name": "__panning_fun/trigonometric.json",
         "version": 1,
         "tutorial": {}
     },
@@ -263,105 +263,19 @@
     "passes": {
         "shaders": [
             {
-                "paint": {
+                "edge_detection_rgb": {
                     "apply": true,
                     "random": false,
-                    "colorOffset": {
-                        "value": 2,
+                    "opacity": {
+                        "value": 0.35,
                         "_type": [
                             0,
-                            2,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "colorFactor": {
-                        "value": 2,
-                        "_type": [
-                            0,
-                            2,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "sampleDistance": {
-                        "value": 5,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "blitzpeakslow"
-                    },
-                    "waveFactor": {
-                        "value": 0.001,
-                        "_type": [
-                            0,
-                            0.5,
-                            0.0001
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "film": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 1,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "timestamp"
-                    },
-                    "scanlines": {
-                        "value": 512,
-                        "_type": [
                             1,
-                            1024,
-                            1
+                            0.001
                         ],
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.05,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
                     }
                 }
             }

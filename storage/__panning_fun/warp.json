@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___panning_fun/warp.json",
+        "name": "__panning_fun/warp.json",
         "version": 1,
         "tutorial": {}
     },
@@ -263,105 +263,61 @@
     "passes": {
         "shaders": [
             {
-                "paint": {
+                "bloom": {
                     "apply": true,
                     "random": false,
-                    "colorOffset": {
-                        "value": 2,
+                    "strength": {
+                        "value": 0.7,
                         "_type": [
                             0,
-                            2,
+                            3,
                             0.01
                         ],
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
                     },
-                    "colorFactor": {
-                        "value": 2,
+                    "threshold": {
+                        "value": 0.3,
                         "_type": [
                             0,
-                            2,
+                            1,
                             0.01
                         ],
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
                     },
-                    "sampleDistance": {
-                        "value": 5,
+                    "radius": {
+                        "value": 0,
                         "_type": [
-                            -10,
-                            10,
+                            0,
+                            1,
                             0.01
                         ],
                         "audio": false,
                         "stepwise": false,
-                        "oscillate": "blitzpeakslow"
-                    },
-                    "waveFactor": {
-                        "value": 0.001,
-                        "_type": [
-                            0,
-                            0.5,
-                            0.0001
-                        ],
-                        "audio": false,
-                        "stepwise": false,
                         "oscillate": "off"
+                    },
+                    "opacify": {
+                        "value": true
                     }
                 }
             },
             {
-                "film": {
+                "edge_detection_rgb": {
                     "apply": true,
                     "random": false,
-                    "time": {
-                        "value": 1,
+                    "opacity": {
+                        "value": 0.6,
                         "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "timestamp"
-                    },
-                    "scanlines": {
-                        "value": 512,
-                        "_type": [
+                            0,
                             1,
-                            1024,
-                            1
+                            0.001
                         ],
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.05,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
                     }
                 }
             }
