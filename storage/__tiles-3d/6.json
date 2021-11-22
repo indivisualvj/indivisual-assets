@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": 0,
+        "name": "__tiles-3d/6.json",
         "version": 1,
         "tutorial": {}
     },
@@ -127,15 +127,15 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "polygon",
+        "shape_geometry": "cube",
         "shape_sizedivider": 14,
-        "shape_moda": 4,
-        "shape_modb": 2,
+        "shape_moda": 0,
+        "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
-        "shape_modifier": "extrude",
+        "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
         "shape_transform_volume": 1,
@@ -167,8 +167,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "onergb",

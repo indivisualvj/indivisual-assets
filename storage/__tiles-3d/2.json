@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__tiles-again/2.json",
+        "name": "__tiles-3d/2.json",
         "version": 1,
         "tutorial": {}
     },
@@ -10,7 +10,7 @@
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
         "layer_positiony_oscillate": "off",
-        "layer_positionz": 0,
+        "layer_positionz": -4,
         "layer_positionz_oscillate": "off",
         "layer_rotationx": 0,
         "layer_rotationx_oscillate": "off",
@@ -22,7 +22,7 @@
     "audio": {
         "audio_thickness": 0.85,
         "audio_usewaveform": false,
-        "rhythm": "half"
+        "rhythm": "double"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -41,7 +41,7 @@
         "lighting_angle_oscillate": "off",
         "lighting_penumbra": 1,
         "lighting_penumbra_oscillate": "off",
-        "lighting_ambient": false,
+        "lighting_ambient": true,
         "lighting_ambient_intensity": 1,
         "lighting_fog": false,
         "lighting_shadows": false,
@@ -110,32 +110,32 @@
     "pattern": {
         "pattern": "frame",
         "pattern_shapes": 112,
-        "pattern_padding": 3.98,
+        "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
-        "pattern_paddingx": 1,
+        "pattern_paddingx": 6.7,
         "pattern_centery": 0,
-        "pattern_paddingy": 1,
+        "pattern_paddingy": 6.7,
         "pattern_centerz": 0,
         "pattern_paddingz": 1,
         "pattern_limit": false,
         "pattern_audio": false,
         "pattern_sync": true,
-        "pattern_mover": "off",
-        "pattern_overlay": "off",
-        "pattern_overlay_volume": 0,
-        "pattern_overlay_volume_oscillate": "off"
+        "pattern_mover": "shuffle",
+        "pattern_overlay": "swarm",
+        "pattern_overlay_volume": 1,
+        "pattern_overlay_volume_oscillate": "onofffull"
     },
     "shape": {
-        "shape_geometry": "tile",
+        "shape_geometry": "cube",
         "shape_sizedivider": 14,
-        "shape_moda": 48,
+        "shape_moda": 0,
         "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
-        "shape_modifier": "extrude",
+        "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
         "shape_transform_volume": 1,
@@ -153,8 +153,8 @@
         "material_side": 0,
         "material_shininess": 0,
         "material_volume": 1,
-        "material_roughness": 0.15,
-        "material_metalness": 1,
+        "material_roughness": 0.1,
+        "material_metalness": 0.95,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
@@ -235,7 +235,7 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 1,
+        "sizing_scale": 1.6,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",
@@ -261,6 +261,24 @@
         "offset_sync": false
     },
     "passes": {
-        "shaders": []
+        "shaders": [
+            {
+                "edge_detection_rgb": {
+                    "apply": true,
+                    "random": false,
+                    "opacity": {
+                        "value": 0,
+                        "_type": [
+                            0,
+                            1,
+                            0.001
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            }
+        ]
     }
 }
