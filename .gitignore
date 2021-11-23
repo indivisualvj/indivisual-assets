@@ -1,4 +1,4 @@
 sessions
 storage/*/\.*
-/storage/_____TEST/
+/storage/*TEST*
 .idea

@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "____carl-craig/0.json",
+        "name": "__cubes-funky/3.json",
         "version": 1,
         "tutorial": {}
     },
@@ -20,9 +20,9 @@
         "layer_rotationz_oscillate": "off"
     },
     "audio": {
-        "audio_thickness": 0.94,
+        "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "half"
+        "rhythm": "double"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -91,15 +91,15 @@
         "background_rotation": 0
     },
     "camera": {
-        "camera_mode": "mirrorpeak",
+        "camera_mode": "manualcenter",
         "camera_mode_volume": 1,
         "camera_mode_volume_oscillate": "off",
-        "camera_x": 0.10000000000000053,
-        "camera_x_oscillate": "off",
+        "camera_x": 1.5,
+        "camera_x_oscillate": "sinus32",
         "camera_y": 0,
         "camera_y_oscillate": "off",
-        "camera_z": 1,
-        "camera_z_oscillate": "off",
+        "camera_z": 1.5,
+        "camera_z_oscillate": "cosinus32",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
         "camera_rotationy": 0,
@@ -108,9 +108,9 @@
         "camera_rotationz_oscillate": "off"
     },
     "pattern": {
-        "pattern": "matrix",
-        "pattern_shapes": 112,
-        "pattern_padding": 0,
+        "pattern": "cube",
+        "pattern_shapes": 6,
+        "pattern_padding": 0.85,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
@@ -127,10 +127,10 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "sphere",
-        "shape_sizedivider": 14,
-        "shape_moda": 32,
-        "shape_modb": 32,
+        "shape_geometry": "tile",
+        "shape_sizedivider": 2,
+        "shape_moda": 0,
+        "shape_modb": 0,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,
@@ -140,23 +140,23 @@
         "shape_transform": "off",
         "shape_transform_volume": 1,
         "shape_pairing": "off",
-        "shape_rhythm": "full",
+        "shape_rhythm": "nochange",
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "point",
+        "mesh_material": "warp",
         "material_style": "fill",
-        "material_blending": "NormalBlending",
+        "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 0,
+        "material_side": 2,
         "material_shininess": 2,
         "material_volume": 1,
         "material_roughness": 0.5,
         "material_metalness": 0.5,
         "material_softshading": false,
-        "material_shadowside": 2,
+        "material_shadowside": 1,
         "material_input": "texture",
         "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
@@ -170,16 +170,16 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "growrgb",
+        "coloring_mode": "onergb",
         "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
-        "coloring_hue": 360,
-        "coloring_hue_oscillate": "oscillator",
+        "coloring_hue": 0,
+        "coloring_hue_oscillate": "off",
         "coloring_sat": 1,
         "coloring_sat_oscillate": "off",
         "coloring_lum": 0.5,
         "coloring_lum_oscillate": "off",
-        "coloring_opacity": 0.06,
+        "coloring_opacity": 1,
         "coloring_opacity_oscillate": "off",
         "coloring_limit": false,
         "coloring_audio": false,
@@ -197,27 +197,27 @@
     "rotation": {
         "rotation_mode": "default",
         "rotation_sync": true,
-        "rotation_direction": "right",
-        "rotation_easing": "off",
+        "rotation_direction": "random",
+        "rotation_easing": "quint",
         "rotation_x": false,
         "rotation_x_random": false,
         "rotation_x_volume": 1,
-        "rotation_y": true,
+        "rotation_y": false,
         "rotation_y_random": false,
-        "rotation_y_volume": 0.2999999999999998,
-        "rotation_z": false,
+        "rotation_y_volume": 1,
+        "rotation_z": true,
         "rotation_z_random": false,
         "rotation_z_volume": 1,
-        "rotation_offset_mode": "wave",
+        "rotation_offset_mode": "off",
         "rotation_offsetx": 0,
         "rotation_offsetx_oscillate": "off",
         "rotation_offsety": 0,
         "rotation_offsety_oscillate": "off",
-        "rotation_offsetz": 0.125,
+        "rotation_offsetz": 0,
         "rotation_offsetz_oscillate": "off"
     },
     "locking": {
-        "shape_lookat": "off",
+        "shape_lookat": "center",
         "shape_lookat_centerx": 0,
         "shape_lookat_centerx_oscillate": "off",
         "shape_lookat_centery": 0,
@@ -234,8 +234,8 @@
         "locking_shapez_multiplier": 1
     },
     "sizing": {
-        "sizing_mode": "grow",
-        "sizing_scale": 6,
+        "sizing_mode": "off",
+        "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",
@@ -245,8 +245,8 @@
         "sizing_z_oscillate": "off",
         "sizing_flip": "off",
         "sizing_limit": false,
-        "sizing_audio": true,
-        "sizing_sync": false
+        "sizing_audio": false,
+        "sizing_sync": true
     },
     "offset": {
         "offset_mode": "off",
@@ -254,8 +254,8 @@
         "offset_x_oscillate": "off",
         "offset_y": 0,
         "offset_y_oscillate": "off",
-        "offset_z": 0,
-        "offset_z_oscillate": "off",
+        "offset_z": -0.7,
+        "offset_z_oscillate": "lininoutdouble",
         "offset_limit": false,
         "offset_audio": false,
         "offset_sync": true
