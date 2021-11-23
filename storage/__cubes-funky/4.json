@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__cubes-funky/3.json",
+        "name": "__cubes-funky/4.json",
         "version": 1,
         "tutorial": {}
     },
@@ -14,15 +14,15 @@
         "layer_positionz_oscillate": "off",
         "layer_rotationx": 0,
         "layer_rotationx_oscillate": "off",
-        "layer_rotationy": 0,
-        "layer_rotationy_oscillate": "off",
-        "layer_rotationz": 0,
-        "layer_rotationz_oscillate": "off"
+        "layer_rotationy": -10.33,
+        "layer_rotationy_oscillate": "incrementalpeak",
+        "layer_rotationz": 29.54,
+        "layer_rotationz_oscillate": "incrementalpeak"
     },
     "audio": {
         "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "double"
+        "rhythm": "half"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -94,10 +94,10 @@
         "camera_mode": "manualcenter",
         "camera_mode_volume": 1,
         "camera_mode_volume_oscillate": "off",
-        "camera_x": 1.5,
-        "camera_x_oscillate": "sinus32",
-        "camera_y": 0,
-        "camera_y_oscillate": "off",
+        "camera_x": 0,
+        "camera_x_oscillate": "off",
+        "camera_y": -1.5,
+        "camera_y_oscillate": "sinus32",
         "camera_z": 1.5,
         "camera_z_oscillate": "cosinus32",
         "camera_rotationx": 0,
@@ -110,7 +110,7 @@
     "pattern": {
         "pattern": "cube",
         "pattern_shapes": 6,
-        "pattern_padding": 0.85,
+        "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
@@ -144,7 +144,7 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "warp",
+        "mesh_material": "digitalambience",
         "material_style": "fill",
         "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
@@ -198,14 +198,14 @@
         "rotation_mode": "default",
         "rotation_sync": true,
         "rotation_direction": "random",
-        "rotation_easing": "quint",
+        "rotation_easing": "off",
         "rotation_x": false,
         "rotation_x_random": false,
         "rotation_x_volume": 1,
         "rotation_y": false,
         "rotation_y_random": false,
         "rotation_y_volume": 1,
-        "rotation_z": true,
+        "rotation_z": false,
         "rotation_z_random": false,
         "rotation_z_volume": 1,
         "rotation_offset_mode": "off",
@@ -254,8 +254,8 @@
         "offset_x_oscillate": "off",
         "offset_y": 0,
         "offset_y_oscillate": "off",
-        "offset_z": -0.7,
-        "offset_z_oscillate": "lininoutdouble",
+        "offset_z": 0,
+        "offset_z_oscillate": "off",
         "offset_limit": false,
         "offset_audio": false,
         "offset_sync": true
