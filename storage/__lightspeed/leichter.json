@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___lightspeed/leichter.json",
+        "name": "__lightspeed/leichter.json",
         "version": 1,
         "tutorial": {}
     },
@@ -20,7 +20,7 @@
         "layer_rotationz_oscillate": "off"
     },
     "audio": {
-        "audio_thickness": 0,
+        "audio_thickness": 0.95,
         "audio_usewaveform": false,
         "rhythm": "half"
     },
@@ -261,88 +261,6 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": [
-            {
-                "bloom": {
-                    "apply": true,
-                    "random": false,
-                    "strength": {
-                        "value": 3,
-                        "_type": [
-                            0,
-                            3,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "threshold": {
-                        "value": 0.25,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "radius": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "opacify": {
-                        "value": true
-                    }
-                }
-            },
-            {
-                "blendmode": {
-                    "apply": true,
-                    "random": false,
-                    "strength": {
-                        "value": 0.5,
-                        "_type": [
-                            -2,
-                            2,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_one": {
-                        "value": 0,
-                        "_type": [
-                            0,
-                            15,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_two": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            15,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            }
-        ]
+        "shaders": []
     }
 }

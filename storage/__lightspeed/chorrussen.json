@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__lightspeed/zorian-flach.json",
+        "name": "__lightspeed/chorrussen.json",
         "version": 1,
         "tutorial": {}
     },
@@ -20,7 +20,7 @@
         "layer_rotationz_oscillate": "off"
     },
     "audio": {
-        "audio_thickness": 0,
+        "audio_thickness": 0.95,
         "audio_usewaveform": false,
         "rhythm": "half"
     },
@@ -267,7 +267,7 @@
                     "apply": true,
                     "random": false,
                     "strength": {
-                        "value": 3,
+                        "value": 1,
                         "_type": [
                             0,
                             3,
@@ -278,7 +278,7 @@
                         "oscillate": "off"
                     },
                     "threshold": {
-                        "value": 0.25,
+                        "value": 0,
                         "_type": [
                             0,
                             1,
