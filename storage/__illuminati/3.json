@@ -141,7 +141,7 @@
         "shape_transform_volume": 1,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
-        "shape_delay": "off"
+        "shape_delay": "grow"
     },
     "material": {
         "mesh_material": "edges",

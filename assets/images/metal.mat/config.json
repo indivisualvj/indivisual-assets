@@ -1,12 +1,7 @@
 {
   "map": "color.png",
-  "aoMap": null,
   "displacementMap": "displacement.png",
-  "displacementScale": 10,
-  "displacementBias": 1,
   "normalMap": "normalGL.png",
   "roughnessMap": "roughness.png",
-  "metalnessMap": "metalness.png",
-  "roughness": 0.1,
-  "metalness": 0.9
+  "metalnessMap": "metalness.png"
 }

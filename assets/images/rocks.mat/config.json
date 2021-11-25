@@ -2,9 +2,6 @@
   "map": "c.png",
   "aoMap": "ao.png",
   "displacementMap": "d.png",
-  "displacementScale": 10,
-  "displacementBias": 1,
   "normalMap": "n.png",
-  "roughnessMap": "r.png",
-  "roughness": 0.1
+  "roughnessMap": "r.png"
 }
