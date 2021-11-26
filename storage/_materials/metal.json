@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "_materials/metal-block.json",
+        "name": "_materials/metal.json",
         "version": 1,
         "tutorial": {}
     },
@@ -75,9 +75,9 @@
         "lighting_pattern_centerz_oscillate": "off"
     },
     "background": {
-        "background_mode": "static",
+        "background_mode": "cubetexture",
         "background_color": "#999",
-        "background_input": "none",
+        "background_input": "yokohama3",
         "background_volume": 1,
         "background_volume_oscillate": "off",
         "background_wraps": "ClampToEdgeWrapping",
@@ -92,7 +92,7 @@
     },
     "camera": {
         "camera_mode": "manualcenter",
-        "camera_mode_volume": 2.9,
+        "camera_mode_volume": 2.13,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
         "camera_x_oscillate": "off",
@@ -135,6 +135,7 @@
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
+        "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
@@ -144,17 +145,20 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "physical",
+        "mesh_material": "reflectivebackground",
         "material_style": "fill",
         "material_blending": "NoBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 0,
         "material_volume": 0,
-        "material_roughness": 1,
-        "material_metalness": 0.73,
+        "material_shininess": 0,
+        "material_reflectivity": 1,
+        "material_roughness": 0.97,
+        "material_metalness": 0.8,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "metal.mat",

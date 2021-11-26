@@ -1,7 +1,8 @@
 {
     "info": {
-        "name": 0,
-        "version": 1
+        "name": "_demos/golden-polyglitter.json",
+        "version": 1,
+        "tutorial": {}
     },
     "layer": {
         "layer_transvisible": false,
@@ -134,8 +135,9 @@
         "shape_limit": true,
         "shape_sync": false,
         "shape_vertices": "",
+        "shape_merge_tolerance": 2,
         "shape_modifier": "off",
-        "shape_modifier_volume": 1.5,
+        "shape_modifier_volume": 1,
         "shape_transform": "audio",
         "shape_transform_volume": 1,
         "shape_pairing": "off",
@@ -154,6 +156,8 @@
         "material_volume": 1,
         "material_roughness": 0.7000000000000001,
         "material_metalness": 1,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 2,
         "material_input": "none",
@@ -166,8 +170,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "reactivergb",

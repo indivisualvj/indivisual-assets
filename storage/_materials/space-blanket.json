@@ -135,6 +135,7 @@
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
+        "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
@@ -144,17 +145,20 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "reflective",
+        "mesh_material": "reflectivebackground",
         "material_style": "fill",
         "material_blending": "NoBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 0,
         "material_volume": 1,
-        "material_roughness": 0.46,
+        "material_shininess": 0,
+        "material_reflectivity": 0,
+        "material_roughness": 0,
         "material_metalness": 1,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "space-blanket-folds.mat",
@@ -261,90 +265,6 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": [
-            {
-                "blendmode": {
-                    "apply": true,
-                    "random": false,
-                    "index": 0,
-                    "strength": {
-                        "value": 0.5,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_one": {
-                        "value": 1,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_two": {
-                        "value": 10,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "bloom": {
-                    "apply": true,
-                    "random": false,
-                    "index": 0,
-                    "strength": {
-                        "value": 1,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "threshold": {
-                        "value": 0.9,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "radius": {
-                        "value": 1,
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "opacify": {
-                        "value": true
-                    }
-                }
-            },
-            {
-                "fxaa": {
-                    "apply": true,
-                    "random": false,
-                    "index": 1000,
-                    "resolution": {
-                        "x": {
-                            "value": 1,
-                            "_func": "valueByWidth",
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        },
-                        "y": {
-                            "value": 1,
-                            "_func": "valueByHeight",
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        }
-                    }
-                }
-            },
-            {
-                "smaa": {
-                    "apply": true,
-                    "random": false,
-                    "index": 1001
-                }
-            }
-        ]
+        "shaders": []
     }
 }
