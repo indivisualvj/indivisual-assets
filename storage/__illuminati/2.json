@@ -22,7 +22,7 @@
     "audio": {
         "audio_thickness": 0.99,
         "audio_usewaveform": false,
-        "rhythm": "half"
+        "rhythm": "hexa"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -91,7 +91,7 @@
         "background_rotation": 0
     },
     "camera": {
-        "camera_mode": "switchlookat",
+        "camera_mode": "switchlookatpeak",
         "camera_mode_volume": 3,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
@@ -135,26 +135,30 @@
         "shape_limit": false,
         "shape_sync": false,
         "shape_vertices": "",
+        "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "drawrangeprogress",
-        "shape_transform_volume": 1,
+        "shape_transform_volume": 0.25,
         "shape_pairing": "off",
-        "shape_rhythm": "doublequad",
-        "shape_delay": "shrink"
+        "shape_rhythm": "nochange",
+        "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "edges",
-        "material_style": "fill",
+        "mesh_material": "basic",
+        "material_style": "stroke",
         "material_blending": "NormalBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 0.2,
         "material_volume": 1,
-        "material_roughness": 0.5,
-        "material_metalness": 0.5,
+        "material_shininess": 0,
+        "material_reflectivity": 0,
+        "material_roughness": 0,
+        "material_metalness": 0,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
@@ -252,7 +256,7 @@
         "offset_mode": "off",
         "offset_x": 0,
         "offset_x_oscillate": "off",
-        "offset_y": 0,
+        "offset_y": 5,
         "offset_y_oscillate": "off",
         "offset_z": 0,
         "offset_z_oscillate": "off",
