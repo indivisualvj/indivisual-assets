@@ -127,10 +127,10 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "cube",
+        "shape_geometry": "rounded_box",
         "shape_sizedivider": 4,
-        "shape_moda": 0,
-        "shape_modb": 0,
+        "shape_moda": 5,
+        "shape_modb": 3,
         "shape_modc": 0,
         "shape_limit": false,
         "shape_sync": true,

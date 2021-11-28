@@ -1,7 +1,8 @@
 {
     "info": {
-        "name": 0,
-        "version": 1
+        "name": "dark/01-core.json",
+        "version": 1,
+        "tutorial": {}
     },
     "layer": {
         "layer_transvisible": true,
@@ -134,6 +135,7 @@
         "shape_limit": true,
         "shape_sync": false,
         "shape_vertices": "",
+        "shape_merge_tolerance": 2,
         "shape_modifier": "sphereify",
         "shape_modifier_volume": 5,
         "shape_transform": "audio",
@@ -143,17 +145,20 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "reflective",
+        "mesh_material": "physical",
         "material_style": "fill",
         "material_blending": "NoBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 0.0,
         "material_volume": 0,
+        "material_shininess": 0,
+        "material_reflectivity": 0,
         "material_roughness": 0.55,
         "material_metalness": 1,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": true,
         "material_shadowside": 0,
         "material_input": "abstract-organic.mat",
@@ -166,8 +171,7 @@
         "material_offsety": 0,
         "material_centerx": 0.5,
         "material_centery": 0.5,
-        "material_rotation": 0,
-        "material_needs_update": true
+        "material_rotation": 0
     },
     "coloring": {
         "coloring_mode": "off",

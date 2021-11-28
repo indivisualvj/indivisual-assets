@@ -3,5 +3,8 @@
   "displacementMap": "displacement.png",
   "normalMap": "normalGL.png",
   "roughnessMap": "roughness.png",
-  "metalnessMap": "metalness.png"
+  "metalnessMap": "metalness.png",
+  "reflectivity": 0,
+  "metalness": 0.25,
+  "roughness": 0.25
 }

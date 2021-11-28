@@ -4,5 +4,8 @@
   "displacementMap": "height.jpg",
   "metalnessMap": "metallic.jpg",
   "normalMap": "normal.jpg",
-  "roughnessMap": "roughness.jpg"
+  "roughnessMap": "roughness.jpg",
+  "reflectivity": 100,
+  "metalness": 1,
+  "roughness": 0.25
 }

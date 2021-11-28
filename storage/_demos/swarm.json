@@ -152,8 +152,9 @@
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 100,
         "material_volume": 1,
+        "material_shininess": 100,
+        "material_reflectivity": 0,
         "material_roughness": 0.5,
         "material_metalness": 0.5,
         "material_disp_scale": 0,
@@ -265,29 +266,6 @@
     },
     "passes": {
         "shaders": [
-            {
-                "fxaa": {
-                    "apply": true,
-                    "random": false,
-                    "index": 1000,
-                    "resolution": {
-                        "x": {
-                            "value": 1,
-                            "_func": "valueByWidth",
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        },
-                        "y": {
-                            "value": 1,
-                            "_func": "valueByHeight",
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        }
-                    }
-                }
-            },
             {
                 "smaa": {
                     "apply": true,
