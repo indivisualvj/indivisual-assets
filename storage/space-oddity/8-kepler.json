@@ -22,7 +22,7 @@
     "audio": {
         "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "hexa"
+        "rhythm": "double"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -95,11 +95,11 @@
         "camera_mode_volume": 0.7000000000000011,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 4,
-        "camera_x_oscillate": "sinus",
+        "camera_x_oscillate": "sinus32",
         "camera_y": -0.39999999999999947,
         "camera_y_oscillate": "sinus",
         "camera_z": 5,
-        "camera_z_oscillate": "cosinus",
+        "camera_z_oscillate": "cosinus32",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
         "camera_rotationy": 0,

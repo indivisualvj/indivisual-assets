@@ -157,7 +157,7 @@
         "material_reflectivity": 0.5,
         "material_roughness": 0.125,
         "material_metalness": 0,
-        "material_disp_scale": 0,
+        "material_disp_scale": 10,
         "material_disp_bias": 0,
         "material_softshading": true,
         "material_shadowside": 1,

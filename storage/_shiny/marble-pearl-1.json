@@ -33,15 +33,15 @@
         "osci3_amp": 0.1
     },
     "lighting": {
-        "lighting_type": "off",
+        "lighting_type": "spot",
         "lighting_color": "#ffffff",
-        "lighting_intensity": 1,
+        "lighting_intensity": 0.8,
         "lighting_intensity_oscillate": "off",
         "lighting_angle": 1.05,
         "lighting_angle_oscillate": "off",
         "lighting_penumbra": 1,
         "lighting_penumbra_oscillate": "off",
-        "lighting_ambient": false,
+        "lighting_ambient": true,
         "lighting_ambient_intensity": 1,
         "lighting_fog": false,
         "lighting_shadows": false,

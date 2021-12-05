@@ -35,7 +35,7 @@
     "lighting": {
         "lighting_type": "star",
         "lighting_color": "#ffffff",
-        "lighting_intensity": 3,
+        "lighting_intensity": 1.5,
         "lighting_intensity_oscillate": "off",
         "lighting_angle": 1.05,
         "lighting_angle_oscillate": "off",
@@ -76,9 +76,9 @@
     },
     "background": {
         "background_mode": "sphere",
-        "background_color": "#222",
+        "background_color": "#777",
         "background_input": "atmosphere,120,10000x5625,30.png",
-        "background_volume": 5,
+        "background_volume": 10,
         "background_volume_oscillate": "off",
         "background_wraps": "ClampToEdgeWrapping",
         "background_wrapt": "ClampToEdgeWrapping",
