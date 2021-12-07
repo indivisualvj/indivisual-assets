@@ -91,7 +91,7 @@
         "background_rotation": 0
     },
     "camera": {
-        "camera_mode": "switch",
+        "camera_mode": "switchposition",
         "camera_mode_volume": 1,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
