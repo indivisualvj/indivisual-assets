@@ -195,7 +195,7 @@
         "filter_volume_oscillate": "off"
     },
     "rotation": {
-        "rotation_mode": "default",
+        "rotation_mode": "_default",
         "rotation_sync": true,
         "rotation_direction": "left",
         "rotation_easing": "off",
