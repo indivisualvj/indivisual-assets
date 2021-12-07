@@ -76,7 +76,7 @@
     },
     "background": {
         "background_mode": "static",
-        "background_color": "#999",
+        "background_color": "#9af",
         "background_input": "none",
         "background_volume": 1,
         "background_volume_oscillate": "off",
