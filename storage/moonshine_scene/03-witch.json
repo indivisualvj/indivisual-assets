@@ -207,7 +207,7 @@
     "locking_shapex_multiplier": 1,
     "locking_shapey_multiplier": 1,
     "locking_shapez_multiplier": 1,
-    "rotation_mode": "_default",
+    "rotation_mode": "default",
     "rotation_x": false,
     "rotation_x_random": false,
     "rotation_x_volume": 1,
