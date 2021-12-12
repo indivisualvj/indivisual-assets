@@ -45,7 +45,7 @@
         "lighting_ambient_intensity": 1,
         "lighting_fog": true,
         "lighting_shadows": true,
-        "lighting_fog_near": 600,
+        "lighting_fog_near": 750,
         "lighting_fog_far": 2000
     },
     "lighting_lookat": {

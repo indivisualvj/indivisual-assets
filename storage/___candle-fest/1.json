@@ -1,26 +1,26 @@
 {
     "info": {
-        "name": "__tiles-honky-metal/1.json",
+        "name": "___candle-fest/1.json",
         "version": 1,
         "tutorial": {}
     },
     "layer": {
-        "layer_transvisible": false,
+        "layer_transvisible": true,
         "layer_positionx": 0,
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
         "layer_positiony_oscillate": "off",
         "layer_positionz": 0,
         "layer_positionz_oscillate": "off",
-        "layer_rotationx": -5,
-        "layer_rotationx_oscillate": "oscillator",
-        "layer_rotationy": 5,
-        "layer_rotationy_oscillate": "oscillator",
+        "layer_rotationx": 0,
+        "layer_rotationx_oscillate": "off",
+        "layer_rotationy": 0,
+        "layer_rotationy_oscillate": "off",
         "layer_rotationz": 0,
         "layer_rotationz_oscillate": "off"
     },
     "audio": {
-        "audio_thickness": 0.9,
+        "audio_thickness": 0,
         "audio_usewaveform": false,
         "rhythm": "half"
     },
@@ -33,15 +33,15 @@
         "osci3_amp": 0.1
     },
     "lighting": {
-        "lighting_type": "point",
+        "lighting_type": "star",
         "lighting_color": "#ffffff",
-        "lighting_intensity": 1,
+        "lighting_intensity": 0.78,
         "lighting_intensity_oscillate": "off",
         "lighting_angle": 1.05,
         "lighting_angle_oscillate": "off",
         "lighting_penumbra": 1,
         "lighting_penumbra_oscillate": "off",
-        "lighting_ambient": false,
+        "lighting_ambient": true,
         "lighting_ambient_intensity": 1,
         "lighting_fog": false,
         "lighting_shadows": false,
@@ -58,8 +58,8 @@
         "lighting_lookat_centerz_oscillate": "off"
     },
     "lighting_pattern": {
-        "lighting_pattern": "ring",
-        "lighting_pattern_lights": 1,
+        "lighting_pattern": "shape",
+        "lighting_pattern_lights": 12,
         "lighting_pattern_rotation": 0,
         "lighting_pattern_rotation_oscillate": "off",
         "lighting_pattern_padding": 1,
@@ -69,9 +69,9 @@
         "lighting_pattern_paddingz": 1,
         "lighting_pattern_centerx": 0,
         "lighting_pattern_centerx_oscillate": "off",
-        "lighting_pattern_centery": 0,
+        "lighting_pattern_centery": -0.19,
         "lighting_pattern_centery_oscillate": "off",
-        "lighting_pattern_centerz": 1,
+        "lighting_pattern_centerz": 0,
         "lighting_pattern_centerz_oscillate": "off"
     },
     "background": {
@@ -91,26 +91,26 @@
         "background_rotation": 0
     },
     "camera": {
-        "camera_mode": "manual",
-        "camera_mode_volume": 1.15,
+        "camera_mode": "manualcenter",
+        "camera_mode_volume": 0.75,
         "camera_mode_volume_oscillate": "off",
-        "camera_x": 0,
-        "camera_x_oscillate": "off",
-        "camera_y": 0,
+        "camera_x": 1,
+        "camera_x_oscillate": "sinus32",
+        "camera_y": 0.25,
         "camera_y_oscillate": "off",
         "camera_z": 1,
-        "camera_z_oscillate": "off",
+        "camera_z_oscillate": "cosinus32",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
         "camera_rotationy": 0,
         "camera_rotationy_oscillate": "off",
-        "camera_rotationz": 5,
-        "camera_rotationz_oscillate": "oscillator"
+        "camera_rotationz": 0,
+        "camera_rotationz_oscillate": "off"
     },
     "pattern": {
-        "pattern": "matrix",
-        "pattern_shapes": 112,
-        "pattern_padding": 1,
+        "pattern": "bacillus",
+        "pattern_shapes": 12,
+        "pattern_padding": 0.65,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
@@ -127,37 +127,41 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "ring",
+        "shape_geometry": "dodecahedron",
         "shape_sizedivider": 14,
-        "shape_moda": 4,
-        "shape_modb": 2,
-        "shape_modc": 2,
+        "shape_moda": 24,
+        "shape_modb": 24,
+        "shape_modc": 24,
         "shape_limit": false,
-        "shape_sync": true,
+        "shape_sync": false,
         "shape_vertices": "",
+        "shape_merge_tolerance": 2,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "off",
+        "shape_transform": "audioy",
         "shape_transform_volume": 1,
-        "shape_pairing": "chess",
+        "shape_pairing": "off",
         "shape_rhythm": "nochange",
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "physical",
+        "mesh_material": "digitalambience",
         "material_style": "fill",
-        "material_blending": "AdditiveBlending",
+        "material_blending": "NormalBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 2,
         "material_volume": 1,
-        "material_roughness": 1,
-        "material_metalness": 1,
+        "material_shininess": 0,
+        "material_reflectivity": 0,
+        "material_roughness": 0,
+        "material_metalness": 0,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 1,
-        "material_input": "metal.mat",
+        "material_input": "texture",
         "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
         "material_wrapt": "ClampToEdgeWrapping",
@@ -170,20 +174,20 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "reactivergb",
-        "coloring_volume": 0.66,
+        "coloring_mode": "off",
+        "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
         "coloring_hue_oscillate": "off",
         "coloring_sat": 1,
         "coloring_sat_oscillate": "off",
-        "coloring_lum": 0.5,
+        "coloring_lum": 2,
         "coloring_lum_oscillate": "off",
         "coloring_opacity": 1,
         "coloring_opacity_oscillate": "off",
         "coloring_limit": false,
         "coloring_audio": false,
-        "coloring_sync": false,
+        "coloring_sync": true,
         "coloring_emissive": false
     },
     "filter": {
@@ -195,24 +199,24 @@
         "filter_volume_oscillate": "off"
     },
     "rotation": {
-        "rotation_mode": "chess",
-        "rotation_sync": true,
-        "rotation_direction": "chessrows",
-        "rotation_easing": "quint",
+        "rotation_mode": "default",
+        "rotation_sync": false,
+        "rotation_direction": "leftorright",
+        "rotation_easing": "off",
         "rotation_x": false,
         "rotation_x_random": false,
         "rotation_x_volume": 1,
-        "rotation_y": false,
-        "rotation_y_random": false,
+        "rotation_y": true,
+        "rotation_y_random": true,
         "rotation_y_volume": 1,
-        "rotation_z": true,
+        "rotation_z": false,
         "rotation_z_random": false,
         "rotation_z_volume": 1,
         "rotation_offset_mode": "off",
-        "rotation_offsetx": -0.1499999999999999,
-        "rotation_offsetx_oscillate": "fourstepminus",
-        "rotation_offsety": 0.15000000000000036,
-        "rotation_offsety_oscillate": "bounceminusfulls",
+        "rotation_offsetx": 0,
+        "rotation_offsetx_oscillate": "off",
+        "rotation_offsety": 0,
+        "rotation_offsety_oscillate": "off",
         "rotation_offsetz": 0,
         "rotation_offsetz_oscillate": "off"
     },
@@ -234,12 +238,12 @@
         "locking_shapez_multiplier": 1
     },
     "sizing": {
-        "sizing_mode": "dotfiveandonefive",
-        "sizing_scale": 1.08,
+        "sizing_mode": "off",
+        "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",
-        "sizing_y": 1,
+        "sizing_y": 2.41,
         "sizing_y_oscillate": "off",
         "sizing_z": 1,
         "sizing_z_oscillate": "off",
@@ -249,12 +253,12 @@
         "sizing_sync": true
     },
     "offset": {
-        "offset_mode": "chess",
+        "offset_mode": "off",
         "offset_x": 0,
         "offset_x_oscillate": "off",
-        "offset_y": -0.25,
-        "offset_y_oscillate": "bounceminusfulls",
-        "offset_z": 0.05,
+        "offset_y": 2.38,
+        "offset_y_oscillate": "off",
+        "offset_z": 0,
         "offset_z_oscillate": "off",
         "offset_limit": false,
         "offset_audio": false,
@@ -263,72 +267,22 @@
     "passes": {
         "shaders": [
             {
-                "paint": {
+                "bloom": {
                     "apply": true,
                     "random": false,
-                    "colorOffset": {
-                        "value": 0.95,
+                    "strength": {
+                        "value": 3,
                         "_type": [
                             0,
-                            2,
+                            3,
                             0.01
                         ],
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
                     },
-                    "colorFactor": {
-                        "value": 0,
-                        "_type": [
-                            0,
-                            2,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "sampleDistance": {
-                        "value": 0.54,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "waveFactor": {
-                        "value": 0.00127,
-                        "_type": [
-                            0,
-                            0.5,
-                            0.0001
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "glitch": {
-                    "apply": true,
-                    "random": false,
-                    "twist": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            64,
-                            0.1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "brightness": {
-                        "value": 1,
+                    "threshold": {
+                        "value": 0.3,
                         "_type": [
                             0,
                             1,
@@ -338,53 +292,55 @@
                         "stepwise": false,
                         "oscillate": "off"
                     },
-                    "offset": {
-                        "x": {
-                            "value": 0.5,
-                            "_type": [
-                                -2,
-                                2,
-                                0.01
-                            ],
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "fourstepminus"
-                        },
-                        "y": {
-                            "value": 0.5,
-                            "_type": [
-                                -2,
-                                2,
-                                0.01
-                            ],
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "fourstepminus"
-                        }
+                    "radius": {
+                        "value": 1,
+                        "_type": [
+                            0,
+                            1,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            },
+            {
+                "blendmode": {
+                    "apply": true,
+                    "random": false,
+                    "strength": {
+                        "value": 0.5,
+                        "_type": [
+                            -2,
+                            2,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
                     },
-                    "zoom": {
-                        "x": {
-                            "value": 1,
-                            "_type": [
-                                0.1,
-                                8,
-                                0.01
-                            ],
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        },
-                        "y": {
-                            "value": 1,
-                            "_type": [
-                                0.1,
-                                8,
-                                0.01
-                            ],
-                            "audio": false,
-                            "stepwise": false,
-                            "oscillate": "off"
-                        }
+                    "operator_one": {
+                        "value": 0,
+                        "_type": [
+                            0,
+                            15,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "operator_two": {
+                        "value": 1,
+                        "_type": [
+                            0,
+                            15,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
                     }
                 }
             }

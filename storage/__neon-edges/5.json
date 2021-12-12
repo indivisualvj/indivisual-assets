@@ -135,7 +135,7 @@
         "shape_limit": true,
         "shape_sync": false,
         "shape_vertices": "",
-        "shape_merge_tolerance": 0,
+        "shape_merge_tolerance": 2,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "wavexybz",

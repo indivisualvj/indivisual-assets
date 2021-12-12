@@ -76,7 +76,7 @@
     },
     "background": {
         "background_mode": "sphere",
-        "background_color": "#222",
+        "background_color": "#666",
         "background_input": "atmosphere,120,10000x5625,30.png",
         "background_volume": 5,
         "background_volume_oscillate": "off",

@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___advent/03-flames.json",
+        "name": "___advent/10-flames.json",
         "version": 1,
         "tutorial": {}
     },
@@ -59,7 +59,7 @@
     },
     "lighting_pattern": {
         "lighting_pattern": "shape",
-        "lighting_pattern_lights": 4,
+        "lighting_pattern_lights": 3,
         "lighting_pattern_rotation": 0.06,
         "lighting_pattern_rotation_oscillate": "timestamp",
         "lighting_pattern_padding": 0.99,
@@ -69,7 +69,7 @@
         "lighting_pattern_paddingz": 1,
         "lighting_pattern_centerx": 0,
         "lighting_pattern_centerx_oscillate": "off",
-        "lighting_pattern_centery": 0.15,
+        "lighting_pattern_centery": -0.08,
         "lighting_pattern_centery_oscillate": "off",
         "lighting_pattern_centerz": 0,
         "lighting_pattern_centerz_oscillate": "off"

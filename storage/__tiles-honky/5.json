@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__tiles-2d/5.json",
+        "name": "__tiles-2d/6.json",
         "version": 1,
         "tutorial": {}
     },
@@ -92,7 +92,7 @@
     },
     "camera": {
         "camera_mode": "manual",
-        "camera_mode_volume": 1.15,
+        "camera_mode_volume": 1,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
         "camera_x_oscillate": "off",
@@ -121,7 +121,7 @@
         "pattern_limit": false,
         "pattern_audio": false,
         "pattern_sync": true,
-        "pattern_mover": "torch",
+        "pattern_mover": "off",
         "pattern_overlay": "off",
         "pattern_overlay_volume": 0,
         "pattern_overlay_volume_oscillate": "off"
@@ -137,7 +137,7 @@
         "shape_vertices": "",
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "drawrangerandom",
+        "shape_transform": "drawrangeprogress",
         "shape_transform_volume": 1,
         "shape_pairing": "chess",
         "shape_rhythm": "nochange",
@@ -145,13 +145,13 @@
     },
     "material": {
         "mesh_material": "basic",
-        "material_style": "stroke",
+        "material_style": "chessedges",
         "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 2,
+        "material_shininess": 0.2,
         "material_volume": 1,
         "material_roughness": 0.5,
         "material_metalness": 1,
@@ -195,10 +195,10 @@
         "filter_volume_oscillate": "off"
     },
     "rotation": {
-        "rotation_mode": "chess",
+        "rotation_mode": "default",
         "rotation_sync": true,
-        "rotation_direction": "chessrows",
-        "rotation_easing": "quint",
+        "rotation_direction": "random",
+        "rotation_easing": "off",
         "rotation_x": false,
         "rotation_x_random": false,
         "rotation_x_volume": 1,
@@ -243,19 +243,19 @@
         "sizing_y_oscillate": "off",
         "sizing_z": 1,
         "sizing_z_oscillate": "off",
-        "sizing_flip": "off",
+        "sizing_flip": "flipx2",
         "sizing_limit": false,
         "sizing_audio": false,
         "sizing_sync": true
     },
     "offset": {
         "offset_mode": "chess",
-        "offset_x": 0,
-        "offset_x_oscillate": "off",
+        "offset_x": 0.5,
+        "offset_x_oscillate": "fourstepfullsminus",
         "offset_y": -0.25,
         "offset_y_oscillate": "bounceminusfulls",
-        "offset_z": 1,
-        "offset_z_oscillate": "oscillator",
+        "offset_z": 0.05,
+        "offset_z_oscillate": "off",
         "offset_limit": false,
         "offset_audio": false,
         "offset_sync": true
