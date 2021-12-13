@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__neon-edges/8.json",
+        "name": "__neon-edges/9.json",
         "version": 1,
         "tutorial": {}
     },
@@ -127,26 +127,26 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "rounded_box",
+        "shape_geometry": "sphere",
         "shape_sizedivider": 6,
-        "shape_moda": 4,
-        "shape_modb": 3,
-        "shape_modc": 0,
+        "shape_moda": 6,
+        "shape_modb": 6,
+        "shape_modc": 6,
         "shape_limit": true,
         "shape_sync": false,
         "shape_vertices": "",
         "shape_merge_tolerance": 2,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "waveall",
-        "shape_transform_volume": 0.82,
+        "shape_transform": "bouncewavehalf",
+        "shape_transform_volume": 5,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "edges",
-        "material_style": "fill",
+        "mesh_material": "basic",
+        "material_style": "stroke",
         "material_blending": "NormalBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
@@ -212,13 +212,13 @@
         "rotation_z": false,
         "rotation_z_random": false,
         "rotation_z_volume": 1,
-        "rotation_offset_mode": "chess45lr",
+        "rotation_offset_mode": "chess90",
         "rotation_offsetx": 0,
         "rotation_offsetx_oscillate": "off",
-        "rotation_offsety": 0.5,
-        "rotation_offsety_oscillate": "fourstepminus",
-        "rotation_offsetz": 0.25,
-        "rotation_offsetz_oscillate": "blitzquarter"
+        "rotation_offsety": 2,
+        "rotation_offsety_oscillate": "off",
+        "rotation_offsetz": 0,
+        "rotation_offsetz_oscillate": "off"
     },
     "locking": {
         "shape_lookat": "off",
