@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___candle-fest/2.json",
+        "name": "___cellular/2.json",
         "version": 1,
         "tutorial": {}
     },
@@ -241,11 +241,11 @@
         "sizing_mode": "beat",
         "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
-        "sizing_x": 1.5,
+        "sizing_x": 1.25,
         "sizing_x_oscillate": "off",
-        "sizing_y": 1.5,
+        "sizing_y": 1.25,
         "sizing_y_oscillate": "off",
-        "sizing_z": 1.5,
+        "sizing_z": 1.25,
         "sizing_z_oscillate": "off",
         "sizing_flip": "off",
         "sizing_limit": false,
@@ -271,7 +271,7 @@
                     "apply": true,
                     "random": false,
                     "strength": {
-                        "value": 1.5,
+                        "value": 2,
                         "_type": [
                             0,
                             3,
@@ -282,7 +282,7 @@
                         "oscillate": "off"
                     },
                     "threshold": {
-                        "value": 0.5,
+                        "value": 0.35,
                         "_type": [
                             0,
                             1,

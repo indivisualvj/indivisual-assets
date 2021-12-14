@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___candle-fest/3.json",
+        "name": "___cellular/3.json",
         "version": 1,
         "tutorial": {}
     },
@@ -129,17 +129,17 @@
     "shape": {
         "shape_geometry": "sphere",
         "shape_sizedivider": 6,
-        "shape_moda": 24,
-        "shape_modb": 24,
-        "shape_modc": 24,
+        "shape_moda": 128,
+        "shape_modb": 128,
+        "shape_modc": 0,
         "shape_limit": true,
         "shape_sync": false,
         "shape_vertices": "",
         "shape_merge_tolerance": 2,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "bouncewavequarter",
-        "shape_transform_volume": 1.87,
+        "shape_transform": "waveall",
+        "shape_transform_volume": 2.5,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
         "shape_delay": "off"
@@ -267,50 +267,11 @@
     "passes": {
         "shaders": [
             {
-                "bloom": {
-                    "apply": true,
-                    "random": false,
-                    "strength": {
-                        "value": 3,
-                        "_type": [
-                            0,
-                            3,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "threshold": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "radius": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
                 "blendmode": {
                     "apply": true,
                     "random": false,
                     "strength": {
-                        "value": -0.5,
+                        "value": 0.5,
                         "_type": [
                             -2,
                             2,
@@ -332,7 +293,7 @@
                         "oscillate": "off"
                     },
                     "operator_two": {
-                        "value": 15,
+                        "value": 4,
                         "_type": [
                             0,
                             15,
@@ -341,6 +302,48 @@
                         "audio": false,
                         "stepwise": false,
                         "oscillate": "off"
+                    }
+                }
+            },
+            {
+                "worley": {
+                    "apply": true,
+                    "random": false,
+                    "time": {
+                        "value": 0.119,
+                        "_type": [
+                            -3,
+                            3,
+                            0.001
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "incrementalpeak"
+                    },
+                    "strength": {
+                        "value": 0.02,
+                        "_type": [
+                            0,
+                            5,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "blitzpeakslow"
+                    },
+                    "scale": {
+                        "value": 100,
+                        "_type": [
+                            0,
+                            100,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "displace": {
+                        "value": true
                     }
                 }
             }

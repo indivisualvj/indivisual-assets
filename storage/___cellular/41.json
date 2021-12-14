@@ -22,7 +22,7 @@
     "audio": {
         "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "octa"
+        "rhythm": "half"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -121,7 +121,7 @@
         "pattern_limit": false,
         "pattern_audio": false,
         "pattern_sync": true,
-        "pattern_mover": "stack",
+        "pattern_mover": "off",
         "pattern_overlay": "off",
         "pattern_overlay_volume": 0,
         "pattern_overlay_volume_oscillate": "off"
@@ -138,11 +138,11 @@
         "shape_merge_tolerance": 2,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "bouncewavequarter",
+        "shape_transform": "bouncewavehalf",
         "shape_transform_volume": 0.95,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
-        "shape_delay": "off"
+        "shape_delay": "random"
     },
     "material": {
         "mesh_material": "clouds",
