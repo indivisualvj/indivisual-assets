@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "space-oddity/8-kepler.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": false,

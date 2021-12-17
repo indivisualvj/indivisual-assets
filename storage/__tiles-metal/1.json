@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "__tiles-metal/1.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": false,

@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "moonshine_scene/00-floor-and-moon.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": true,

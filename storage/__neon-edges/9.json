@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "__neon-edges/9.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": false,

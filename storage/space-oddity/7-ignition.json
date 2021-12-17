@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "space-oddity/7-ignition.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": false,

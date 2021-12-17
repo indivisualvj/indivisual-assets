@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "___advent/01-dochts.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": true,

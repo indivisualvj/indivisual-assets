@@ -1,8 +1,7 @@
 {
     "info": {
         "name": "__lightspeed/leichter.json",
-        "version": 1,
-        "tutorial": {}
+        "version": 1
     },
     "layer": {
         "layer_transvisible": true,
