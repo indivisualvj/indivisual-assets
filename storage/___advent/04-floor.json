@@ -11,7 +11,7 @@
         "layer_positiony_oscillate": "off",
         "layer_positionz": 0,
         "layer_positionz_oscillate": "off",
-        "layer_rotationx": -90,
+        "layer_rotationx": 90,
         "layer_rotationx_oscillate": "off",
         "layer_rotationy": 0,
         "layer_rotationy_oscillate": "off",
@@ -21,7 +21,7 @@
     "audio": {
         "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "half"
+        "rhythm": "quarter"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -91,7 +91,7 @@
     },
     "camera": {
         "camera_mode": "manualcenter",
-        "camera_mode_volume": 0.75,
+        "camera_mode_volume": 0.5,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 1,
         "camera_x_oscillate": "sinus32",
@@ -121,12 +121,12 @@
         "pattern_audio": false,
         "pattern_sync": true,
         "pattern_mover": "off",
-        "pattern_overlay": "off",
-        "pattern_overlay_volume": 0,
-        "pattern_overlay_volume_oscillate": "off"
+        "pattern_overlay": "dropz",
+        "pattern_overlay_volume": 0.02,
+        "pattern_overlay_volume_oscillate": "audio"
     },
     "shape": {
-        "shape_geometry": "rounded_box",
+        "shape_geometry": "tile",
         "shape_sizedivider": 1,
         "shape_moda": 0,
         "shape_modb": 2,
@@ -150,7 +150,7 @@
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 0,
+        "material_side": 1,
         "material_volume": 1,
         "material_shininess": 0,
         "material_reflectivity": 0,
@@ -198,7 +198,7 @@
         "filter_volume_oscillate": "off"
     },
     "rotation": {
-        "rotation_mode": "_default",
+        "rotation_mode": "default",
         "rotation_sync": true,
         "rotation_direction": "random",
         "rotation_easing": "off",
@@ -238,13 +238,13 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 1,
+        "sizing_scale": 2,
         "sizing_scale_oscillate": "off",
-        "sizing_x": 1.5,
+        "sizing_x": 1,
         "sizing_x_oscillate": "off",
-        "sizing_y": 1.5,
+        "sizing_y": 1,
         "sizing_y_oscillate": "off",
-        "sizing_z": 0.01,
+        "sizing_z": 1,
         "sizing_z_oscillate": "off",
         "sizing_flip": "off",
         "sizing_limit": false,

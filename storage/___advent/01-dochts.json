@@ -91,7 +91,7 @@
     },
     "camera": {
         "camera_mode": "manualcenter",
-        "camera_mode_volume": 0.75,
+        "camera_mode_volume": 0.5,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 1,
         "camera_x_oscillate": "sinus32",

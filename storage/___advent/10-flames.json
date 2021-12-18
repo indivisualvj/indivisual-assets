@@ -58,7 +58,7 @@
     },
     "lighting_pattern": {
         "lighting_pattern": "shape",
-        "lighting_pattern_lights": 3,
+        "lighting_pattern_lights": 4,
         "lighting_pattern_rotation": 0.06,
         "lighting_pattern_rotation_oscillate": "timestamp",
         "lighting_pattern_padding": 0.99,
@@ -91,7 +91,7 @@
     },
     "camera": {
         "camera_mode": "manualcenter",
-        "camera_mode_volume": 0.75,
+        "camera_mode_volume": 0.5,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 1,
         "camera_x_oscillate": "sinus32",
@@ -108,7 +108,7 @@
     },
     "pattern": {
         "pattern": "cube",
-        "pattern_shapes": 3,
+        "pattern_shapes": 4,
         "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,

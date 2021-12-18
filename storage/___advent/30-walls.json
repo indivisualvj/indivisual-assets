@@ -1,10 +1,10 @@
 {
     "info": {
-        "name": "_demos/pingpong-cube.json",
+        "name": "___advent/30-walls.json",
         "version": 1
     },
     "layer": {
-        "layer_transvisible": false,
+        "layer_transvisible": true,
         "layer_positionx": 0,
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
@@ -13,10 +13,10 @@
         "layer_positionz_oscillate": "off",
         "layer_rotationx": 0,
         "layer_rotationx_oscillate": "off",
-        "layer_rotationy": 2,
-        "layer_rotationy_oscillate": "timestamp",
-        "layer_rotationz": -2,
-        "layer_rotationz_oscillate": "timestamp"
+        "layer_rotationy": 0,
+        "layer_rotationy_oscillate": "off",
+        "layer_rotationz": 0,
+        "layer_rotationz_oscillate": "off"
     },
     "audio": {
         "audio_thickness": 0,
@@ -91,14 +91,14 @@
     },
     "camera": {
         "camera_mode": "manualcenter",
-        "camera_mode_volume": 1,
+        "camera_mode_volume": 0.5,
         "camera_mode_volume_oscillate": "off",
-        "camera_x": 1.65,
-        "camera_x_oscillate": "cosinus32",
-        "camera_y": 0,
+        "camera_x": 1,
+        "camera_x_oscillate": "sinus32",
+        "camera_y": 0.5,
         "camera_y_oscillate": "off",
-        "camera_z": 2.23,
-        "camera_z_oscillate": "sinus32",
+        "camera_z": 1,
+        "camera_z_oscillate": "cosinus32",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
         "camera_rotationy": 0,
@@ -107,9 +107,9 @@
         "camera_rotationz_oscillate": "off"
     },
     "pattern": {
-        "pattern": "matrix",
-        "pattern_shapes": 1,
-        "pattern_padding": 1,
+        "pattern": "cube",
+        "pattern_shapes": 6,
+        "pattern_padding": 4,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
@@ -126,32 +126,32 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "cube",
+        "shape_geometry": "tile",
         "shape_sizedivider": 1,
-        "shape_moda": 64,
-        "shape_modb": 64,
-        "shape_modc": 64,
+        "shape_moda": 0,
+        "shape_modb": 0,
+        "shape_modc": 0,
         "shape_limit": false,
-        "shape_sync": false,
+        "shape_sync": true,
         "shape_vertices": "",
         "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "pingpong",
+        "shape_transform": "off",
         "shape_transform_volume": 1,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "point",
+        "mesh_material": "craziness",
         "material_style": "fill",
-        "material_blending": "NormalBlending",
+        "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_volume": 0.59,
+        "material_volume": 1,
         "material_shininess": 0,
         "material_reflectivity": 0,
         "material_roughness": 0,
@@ -220,7 +220,7 @@
         "rotation_offsetz_oscillate": "off"
     },
     "locking": {
-        "shape_lookat": "off",
+        "shape_lookat": "forcecenter",
         "shape_lookat_centerx": 0,
         "shape_lookat_centerx_oscillate": "off",
         "shape_lookat_centery": 0,
@@ -238,7 +238,7 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 1,
+        "sizing_scale": 2.38,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",

@@ -317,6 +317,23 @@
                         "value": false
                     }
                 }
+            },
+            {
+                "edge_detection_rgb": {
+                    "apply": true,
+                    "random": false,
+                    "opacity": {
+                        "value": 0,
+                        "_type": [
+                            0,
+                            1,
+                            0.001
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
             }
         ]
     }
