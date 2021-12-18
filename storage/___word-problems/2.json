@@ -144,14 +144,14 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "edges",
-        "material_style": "fill",
+        "mesh_material": "standard",
+        "material_style": "chessedges",
         "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 0,
-        "material_volume": 4,
+        "material_side": 2,
+        "material_volume": 3,
         "material_shininess": 0,
         "material_reflectivity": 0,
         "material_roughness": 0,
@@ -173,7 +173,7 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "floatrgb",
+        "coloring_mode": "onergb",
         "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
@@ -182,7 +182,7 @@
         "coloring_sat_oscillate": "off",
         "coloring_lum": 0.5,
         "coloring_lum_oscillate": "off",
-        "coloring_opacity": 1,
+        "coloring_opacity": 0.125,
         "coloring_opacity_oscillate": "off",
         "coloring_limit": false,
         "coloring_audio": false,
@@ -190,7 +190,7 @@
         "coloring_emissive": true
     },
     "filter": {
-        "filter_mode": "off",
+        "filter_mode": "chess",
         "filter_audio": false,
         "filter_limit": false,
         "filter_sync": false,

@@ -108,7 +108,7 @@
     },
     "pattern": {
         "pattern": "matrix",
-        "pattern_shapes": 64,
+        "pattern_shapes": 8,
         "pattern_padding": 0,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
@@ -144,13 +144,13 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "edges",
-        "material_style": "fill",
-        "material_blending": "NormalBlending",
+        "mesh_material": "standard",
+        "material_style": "chessedges",
+        "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 0,
+        "material_side": 2,
         "material_volume": 3,
         "material_shininess": 0,
         "material_reflectivity": 0,
@@ -173,7 +173,7 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "floatrgb",
+        "coloring_mode": "onergb",
         "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
@@ -182,7 +182,7 @@
         "coloring_sat_oscillate": "off",
         "coloring_lum": 0.5,
         "coloring_lum_oscillate": "off",
-        "coloring_opacity": 1,
+        "coloring_opacity": 0.225,
         "coloring_opacity_oscillate": "off",
         "coloring_limit": false,
         "coloring_audio": false,
@@ -190,7 +190,7 @@
         "coloring_emissive": true
     },
     "filter": {
-        "filter_mode": "off",
+        "filter_mode": "chess",
         "filter_audio": false,
         "filter_limit": false,
         "filter_sync": false,
@@ -238,11 +238,11 @@
     },
     "sizing": {
         "sizing_mode": "growbeat",
-        "sizing_scale": 10,
+        "sizing_scale": 6,
         "sizing_scale_oscillate": "off",
-        "sizing_x": 1,
+        "sizing_x": 2,
         "sizing_x_oscillate": "off",
-        "sizing_y": 1,
+        "sizing_y": 2,
         "sizing_y_oscillate": "off",
         "sizing_z": 1,
         "sizing_z_oscillate": "off",
@@ -265,104 +265,6 @@
     },
     "passes": {
         "shaders": [
-            {
-                "mirror": {
-                    "apply": true,
-                    "random": false,
-                    "side": {
-                        "value": 3,
-                        "_type": [
-                            0,
-                            3,
-                            1
-                        ],
-                        "audio": true,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "mpeg": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            10,
-                            0.001
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "incremental"
-                    },
-                    "strength": {
-                        "value": 0.25,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            },
-            {
-                "film": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 1,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "timestamp"
-                    },
-                    "scanlines": {
-                        "value": 512,
-                        "_type": [
-                            1,
-                            1024,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.05,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
-                    }
-                }
-            },
             {
                 "mirror": {
                     "apply": true,
