@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "___wamsler-2021/some-broad-equalizing.json",
+        "name": "___pointy-cubes/2.json",
         "version": 1
     },
     "layer": {
@@ -9,7 +9,7 @@
         "layer_positionx_oscillate": "off",
         "layer_positiony": 0,
         "layer_positiony_oscillate": "off",
-        "layer_positionz": -5,
+        "layer_positionz": 0,
         "layer_positionz_oscillate": "off",
         "layer_rotationx": 0,
         "layer_rotationx_oscillate": "off",
@@ -90,15 +90,15 @@
         "background_rotation": 0
     },
     "camera": {
-        "camera_mode": "manual",
-        "camera_mode_volume": 1,
+        "camera_mode": "mirror",
+        "camera_mode_volume": 0.05000000000000071,
         "camera_mode_volume_oscillate": "off",
-        "camera_x": 0,
+        "camera_x": 0.20000000000000018,
         "camera_x_oscillate": "off",
-        "camera_y": 0,
+        "camera_y": 0.20000000000000018,
         "camera_y_oscillate": "off",
-        "camera_z": 1,
-        "camera_z_oscillate": "off",
+        "camera_z": 0.5,
+        "camera_z_oscillate": "sinus64",
         "camera_rotationx": 0,
         "camera_rotationx_oscillate": "off",
         "camera_rotationy": 0,
@@ -107,10 +107,10 @@
         "camera_rotationz_oscillate": "off"
     },
     "pattern": {
-        "pattern": "matrix",
-        "pattern_shapes": 512,
-        "pattern_padding": 2.275,
-        "pattern_padding_oscillate": "off",
+        "pattern": "cube",
+        "pattern_shapes": 4,
+        "pattern_padding": 4,
+        "pattern_padding_oscillate": "sinus32",
         "pattern_centerx": 0,
         "pattern_paddingx": 1,
         "pattern_centery": 0,
@@ -126,36 +126,40 @@
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "tile",
-        "shape_sizedivider": 32,
-        "shape_moda": 0,
-        "shape_modb": 0,
-        "shape_modc": 0,
+        "shape_geometry": "cube",
+        "shape_sizedivider": 1,
+        "shape_moda": 12,
+        "shape_modb": 12,
+        "shape_modc": 12,
         "shape_limit": false,
-        "shape_sync": true,
+        "shape_sync": false,
         "shape_vertices": "",
+        "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
-        "shape_transform": "off",
-        "shape_transform_volume": 1,
+        "shape_transform": "bouncewave",
+        "shape_transform_volume": 2.5,
         "shape_pairing": "off",
         "shape_rhythm": "nochange",
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "physical",
+        "mesh_material": "pointedges",
         "material_style": "fill",
         "material_blending": "NoBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
-        "material_side": 0,
+        "material_side": 2,
+        "material_volume": 0.060000000000000005,
         "material_shininess": 0.2,
-        "material_volume": 1,
-        "material_roughness": 1,
-        "material_metalness": 1,
+        "material_reflectivity": 0,
+        "material_roughness": 0.5,
+        "material_metalness": 0.5,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
-        "material_shadowside": 1,
+        "material_shadowside": 2,
         "material_input": "texture",
         "material_mapping": "default",
         "material_wraps": "ClampToEdgeWrapping",
@@ -170,7 +174,7 @@
     },
     "coloring": {
         "coloring_mode": "reactivergb",
-        "coloring_volume": 0.48799999999999943,
+        "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
         "coloring_hue_oscillate": "off",
@@ -182,7 +186,7 @@
         "coloring_opacity_oscillate": "off",
         "coloring_limit": false,
         "coloring_audio": false,
-        "coloring_sync": false,
+        "coloring_sync": true,
         "coloring_emissive": true
     },
     "filter": {
@@ -196,17 +200,17 @@
     "rotation": {
         "rotation_mode": "default",
         "rotation_sync": true,
-        "rotation_direction": "random",
+        "rotation_direction": "leftandright",
         "rotation_easing": "off",
-        "rotation_x": false,
+        "rotation_x": true,
         "rotation_x_random": false,
-        "rotation_x_volume": 1,
-        "rotation_y": false,
+        "rotation_x_volume": 0.09999999999999964,
+        "rotation_y": true,
         "rotation_y_random": false,
-        "rotation_y_volume": 1,
-        "rotation_z": false,
+        "rotation_y_volume": 0.09999999999999964,
+        "rotation_z": true,
         "rotation_z_random": false,
-        "rotation_z_volume": 1,
+        "rotation_z_volume": 0.09999999999999964,
         "rotation_offset_mode": "off",
         "rotation_offsetx": 0,
         "rotation_offsetx_oscillate": "off",
@@ -234,7 +238,7 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 2.25,
+        "sizing_scale": 1,
         "sizing_scale_oscillate": "off",
         "sizing_x": 1,
         "sizing_x_oscillate": "off",
@@ -260,99 +264,6 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": [
-            {
-                "film": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 1,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "timestamp"
-                    },
-                    "scanlines": {
-                        "value": 512,
-                        "_type": [
-                            1,
-                            1024,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.05,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
-                    }
-                }
-            },
-            {
-                "blendmode": {
-                    "apply": true,
-                    "random": false,
-                    "strength": {
-                        "value": -0.25,
-                        "_type": [
-                            -2,
-                            2,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_one": {
-                        "value": 0,
-                        "_type": [
-                            0,
-                            15,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "operator_two": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            15,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            }
-        ]
+        "shaders": []
     }
 }
