@@ -134,6 +134,7 @@
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
+        "shape_merge_tolerance": 0,
         "shape_modifier": "off",
         "shape_modifier_volume": 1,
         "shape_transform": "off",
@@ -150,10 +151,13 @@
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_shininess": 2,
         "material_volume": 1,
+        "material_shininess": 2,
+        "material_reflectivity": 0,
         "material_roughness": 0.5,
         "material_metalness": 0.5,
+        "material_disp_scale": 0,
+        "material_disp_bias": 0,
         "material_softshading": false,
         "material_shadowside": 1,
         "material_input": "texture",
@@ -260,6 +264,94 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": []
+        "shaders": [
+            {
+                "mirror": {
+                    "apply": true,
+                    "random": false,
+                    "side": {
+                        "value": 1,
+                        "_type": [
+                            0,
+                            3,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            },
+            {
+                "film": {
+                    "apply": true,
+                    "random": false,
+                    "time": {
+                        "value": 10,
+                        "_type": [
+                            -10,
+                            10,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "incrementalpeak"
+                    },
+                    "scanlines": {
+                        "value": 1024,
+                        "_type": [
+                            1,
+                            1024,
+                            1
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "scanlines_intensity": {
+                        "value": 0.5,
+                        "_type": [
+                            0,
+                            5,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "noise": {
+                        "value": 0.15,
+                        "_type": [
+                            0,
+                            5,
+                            0.01
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    },
+                    "grayscale": {
+                        "value": false
+                    }
+                }
+            },
+            {
+                "edge_detection_rgb": {
+                    "apply": true,
+                    "random": false,
+                    "opacity": {
+                        "value": 0,
+                        "_type": [
+                            0,
+                            1,
+                            0.001
+                        ],
+                        "audio": false,
+                        "stepwise": false,
+                        "oscillate": "off"
+                    }
+                }
+            }
+        ]
     }
 }

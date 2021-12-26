@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "__bars/5.json",
+        "name": "___wobbly-lines/2.json",
         "version": 1
     },
     "layer": {
@@ -11,17 +11,17 @@
         "layer_positiony_oscillate": "off",
         "layer_positionz": 0,
         "layer_positionz_oscillate": "off",
-        "layer_rotationx": 0,
-        "layer_rotationx_oscillate": "off",
+        "layer_rotationx": 180,
+        "layer_rotationx_oscillate": "onoffdouble",
         "layer_rotationy": 0,
         "layer_rotationy_oscillate": "off",
-        "layer_rotationz": 180,
-        "layer_rotationz_oscillate": "onoffhalf"
+        "layer_rotationz": 5,
+        "layer_rotationz_oscillate": "timestamp"
     },
     "audio": {
         "audio_thickness": 0,
         "audio_usewaveform": false,
-        "rhythm": "half"
+        "rhythm": "double"
     },
     "oscillator": {
         "osci1_period": 2,
@@ -91,7 +91,7 @@
     },
     "camera": {
         "camera_mode": "manual",
-        "camera_mode_volume": 2.3,
+        "camera_mode_volume": 1,
         "camera_mode_volume_oscillate": "off",
         "camera_x": 0,
         "camera_x_oscillate": "off",
@@ -108,7 +108,7 @@
     },
     "pattern": {
         "pattern": "matrix",
-        "pattern_shapes": 14,
+        "pattern_shapes": 4,
         "pattern_padding": 1,
         "pattern_padding_oscillate": "off",
         "pattern_centerx": 0,
@@ -120,17 +120,17 @@
         "pattern_limit": false,
         "pattern_audio": false,
         "pattern_sync": true,
-        "pattern_mover": "pan",
+        "pattern_mover": "off",
         "pattern_overlay": "off",
         "pattern_overlay_volume": 0,
         "pattern_overlay_volume_oscillate": "off"
     },
     "shape": {
-        "shape_geometry": "bar",
-        "shape_sizedivider": 14,
-        "shape_moda": 2,
+        "shape_geometry": "steppedpolygon",
+        "shape_sizedivider": 2,
+        "shape_moda": 128,
         "shape_modb": 0,
-        "shape_modc": 0,
+        "shape_modc": 2,
         "shape_limit": false,
         "shape_sync": true,
         "shape_vertices": "",
@@ -144,18 +144,18 @@
         "shape_delay": "off"
     },
     "material": {
-        "mesh_material": "lambert",
+        "mesh_material": "edges",
         "material_style": "fill",
-        "material_blending": "NormalBlending",
+        "material_blending": "AdditiveBlending",
         "material_blendequation": "AddEquation",
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 0,
-        "material_volume": 1,
-        "material_shininess": 2,
+        "material_volume": 10,
+        "material_shininess": 0,
         "material_reflectivity": 0,
-        "material_roughness": 0.5,
-        "material_metalness": 0.5,
+        "material_roughness": 0,
+        "material_metalness": 0,
         "material_disp_scale": 0,
         "material_disp_bias": 0,
         "material_softshading": false,
@@ -173,8 +173,8 @@
         "material_rotation": 0
     },
     "coloring": {
-        "coloring_mode": "floatrgbc",
-        "coloring_volume": 1.33,
+        "coloring_mode": "onergb",
+        "coloring_volume": 1,
         "coloring_volume_oscillate": "off",
         "coloring_hue": 0,
         "coloring_hue_oscillate": "off",
@@ -200,7 +200,7 @@
     "rotation": {
         "rotation_mode": "default",
         "rotation_sync": true,
-        "rotation_direction": "right",
+        "rotation_direction": "random",
         "rotation_easing": "off",
         "rotation_x": false,
         "rotation_x_random": false,
@@ -211,13 +211,13 @@
         "rotation_z": false,
         "rotation_z_random": false,
         "rotation_z_volume": 1,
-        "rotation_offset_mode": "off",
+        "rotation_offset_mode": "chess45lr",
         "rotation_offsetx": 0,
         "rotation_offsetx_oscillate": "off",
         "rotation_offsety": 0,
         "rotation_offsety_oscillate": "off",
-        "rotation_offsetz": 0.20000000000000018,
-        "rotation_offsetz_oscillate": "fourstephalfsminus"
+        "rotation_offsetz": 0.25,
+        "rotation_offsetz_oscillate": "timestamp"
     },
     "locking": {
         "shape_lookat": "off",
@@ -238,13 +238,13 @@
     },
     "sizing": {
         "sizing_mode": "off",
-        "sizing_scale": 1,
-        "sizing_scale_oscillate": "off",
-        "sizing_x": 2,
+        "sizing_scale": 1.75,
+        "sizing_scale_oscillate": "sininoutdotfive32",
+        "sizing_x": 1,
         "sizing_x_oscillate": "off",
-        "sizing_y": 4,
+        "sizing_y": 1.5,
         "sizing_y_oscillate": "off",
-        "sizing_z": 0,
+        "sizing_z": 1,
         "sizing_z_oscillate": "off",
         "sizing_flip": "off",
         "sizing_limit": false,
@@ -264,94 +264,6 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": [
-            {
-                "mirror": {
-                    "apply": true,
-                    "random": false,
-                    "side": {
-                        "value": 3,
-                        "_type": [
-                            0,
-                            3,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": true,
-                        "oscillate": "fourstepfulls"
-                    }
-                }
-            },
-            {
-                "film": {
-                    "apply": true,
-                    "random": false,
-                    "time": {
-                        "value": 10,
-                        "_type": [
-                            -10,
-                            10,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "incrementalpeak"
-                    },
-                    "scanlines": {
-                        "value": 1024,
-                        "_type": [
-                            1,
-                            1024,
-                            1
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "scanlines_intensity": {
-                        "value": 0.5,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "noise": {
-                        "value": 0.15,
-                        "_type": [
-                            0,
-                            5,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "grayscale": {
-                        "value": false
-                    }
-                }
-            },
-            {
-                "edge_detection_rgb": {
-                    "apply": true,
-                    "random": false,
-                    "opacity": {
-                        "value": 0,
-                        "_type": [
-                            0,
-                            1,
-                            0.001
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    }
-                }
-            }
-        ]
+        "shaders": []
     }
 }

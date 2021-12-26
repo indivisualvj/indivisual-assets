@@ -151,7 +151,7 @@
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 2,
-        "material_volume": 0.060000000000000005,
+        "material_volume": 0.29,
         "material_shininess": 0.2,
         "material_reflectivity": 0,
         "material_roughness": 0.5,

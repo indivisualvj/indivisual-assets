@@ -151,7 +151,7 @@
         "material_blendsrc": "SrcAlphaFactor",
         "material_blenddst": "OneMinusSrcAlphaFactor",
         "material_side": 2,
-        "material_volume": 0.060000000000000005,
+        "material_volume": 0.29,
         "material_shininess": 0.2,
         "material_reflectivity": 0,
         "material_roughness": 0.5,
@@ -264,49 +264,6 @@
         "offset_sync": true
     },
     "passes": {
-        "shaders": [
-            {
-                "bloom": {
-                    "apply": true,
-                    "random": false,
-                    "strength": {
-                        "value": 3,
-                        "_type": [
-                            0,
-                            3,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "threshold": {
-                        "value": 0,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "radius": {
-                        "value": 1,
-                        "_type": [
-                            0,
-                            1,
-                            0.01
-                        ],
-                        "audio": false,
-                        "stepwise": false,
-                        "oscillate": "off"
-                    },
-                    "opacify": {
-                        "value": true
-                    }
-                }
-            }
-        ]
+        "shaders": []
     }
 }
